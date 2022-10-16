@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largest number</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        div {
+            padding: 10px 20px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+        }
+
+        input, button {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <input type="number" placeholder="enter first number" name="first" value="" id="f" />
+        <input type="number" placeholder="enter secound number" name="secound" value="" id="s" />
+        <button onclick="compaireNumbers()">compair both numbers</button>
+    </div>
+    <script>
+        function compaireNumbers() {
+            var x = parseInt(document.getElementById("f").value);
+            var y = parseInt(document.getElementById("s").value);
+            if(x>y){
+                alert(`greatest number is ${x}`)
+            }else if(x<y){
+                alert(`greatest number is ${y}`)
+            }else  if(x=y){
+                alert(`both numbers are equal`)
+            }
+        }
+    </script>
+
+</body>
+
+</html>
